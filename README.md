@@ -74,7 +74,7 @@ Create a `.env` file in the root folder with the following:
 
 ```
 DATABASE_URL=sqlite:///finance.db
-JWT_SECRET_KEY=mysuperverylongsecretkey1234567890abcdef
+JWT_SECRET_KEY=******
 ```
 
 ### 5. Run the server
