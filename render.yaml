@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: finance-tracker
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app
+    envVars:
+      - key: JWT_SECRET_KEY
+        value: mysuperverylongsecretkey1234567890abcdef
+      - key: DATABASE_URL
+        value: sqlite:///finance.db
